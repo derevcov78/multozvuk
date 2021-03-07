@@ -157,54 +157,91 @@ h1, h2, h3, h4, h5, h6 {
 	color: #f0be0b;
 }
 
-.page2 {
+/*
+.page6 {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	width: 100%;
 	height: 100vh;
 
-	background: url("../img/2.jpg") center no-repeat;
-	background-size: cover;
+	/*background: rgb(235,252,4);
+	background: linear-gradient(100deg, rgba(235,252,4,1) 0%, rgba(52,235,205,1) 49%, rgba(0,255,157,0.9699230033810399) 100%);*/
+
+	/*background: url('../img/01.jpg') 0 0/50px no-repeat, url('../img/02.jpg') 100% 100%/50px no-repeat, url('../img/03.jpg') 50% no-repeat, linear-gradient(100deg, rgba(235,252,4,1) 0%, rgba(52,235,205,1) 49%, rgba(0,255,157,0.9699230033810399) 100%); 50%/cover no-repeat;
+
+}
+*/
+
+/* вопрос ответ */
+.wrapper{
+	font-family: Arial;
+	font-size: 20px;
+	margin: 0 auto;
+	text-align: left;
+
+	width: 100%;
+	height: 100%;
+	padding: 50px;
+}
+/* Основные стили */
+.item {
+	font-size: 40px;
+}
+.block__item {
+	margin: 0px 0px 40px 0px;
 }
 
-.page2 {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	width: 100%;
-	height: 100vh;
-
-	background: url("../img/3.jpg") center no-repeat;
-	background-size: cover;
+.block__title {
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	position: relative;
+	padding: 0px 0px 0px 50px;
+	cursor: pointer;
 }
-.page3 {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	width: 100%;
-	height: 100vh;
-
-	background: url("../img/4.jpg") center no-repeat;
-	background-size: cover;
+.block__title:before,
+.block__title:after{
+	content: '';
+	width: 10px;
+	height: 1px;
+	background-color: #000;
+	position: absolute;
+	top: 8px;
+	transition: all 0.3s ease 0s;
 }
-.page4 {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	width: 100%;
-	height: 100vh;
-
-	background: url("../img/5.jpg") center no-repeat;
-	background-size: cover;
+.block__title:before{
+	transform: rotate(40deg);
+	left: 0;
 }
-.page5 {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	width: 100%;
-	height: 100vh;
+.block__title:after{
+	transform: rotate(-40deg);
+	left: 8px;
+}
 
-	background: url("../img/6.jpg") center no-repeat;
-	background-size: cover;
+.block__title.active:before,
+.block__title.active:after{
+	background-color: red;
+}
+.block__title.active:before{
+	transform: rotate(-40deg);
+}
+.block__title.active:after{
+	transform: rotate(40deg);
+}
+
+.block__text {
+	display: none;
+	padding: 10px 0px 0px 0px;
+}
+
+.wrapper {
+	padding: 30px;
+	min-height: 100%;
+}
+
+.foto {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  height: 100%;
 }

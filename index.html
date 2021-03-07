@@ -42,18 +42,81 @@
 			</div>
 			<div class="timer">
 				<h3>успей купить</h3>
-				<script src="//megatimer.ru/get/768d54b1f265c3058c152967bff3d665.js"></script>
+
+				<script src="//megatimer.ru/get/03bec8f27ce72b11174c9b4a3752a44b.js"></script>
 			</div>
 		</div>
 	</div>
+
+
+
+	<div class="wrapper">
+		<!-- вопрос ответ -->
+		<div class="wrapper">
+			<div class="block one">
+				<p class="item">Часто задаваемые вопросы</p>
+				<div class="block__item">
+					<div class="block__title">Как осуществляется доставка?</div>
+					<div class="block__text">
+						Доставка по всей России курьером или через пункты самовывоза.
+						Доставка по Москве и СПб на следующий день. Доставка в регионы 2-5 дней.
+					</div>
+				</div>
+				<div class="block__item">
+					<div class="block__title">Как происходит оплата заказа?</div>
+					<div class="block__text">
+						Оплата при получении удобным способом:
+						наличными, безналичный расчет.
+					</div>
+				</div>
+			</div>
+			<div class="block__item">
+				<div class="block__title">Какая гарантия действует на колонку?</div>
+				<div class="block__text">
+					Мы предоставляем 1 год гарантии.
+					Если с Мультозвуком что-то случиться, мы заменим его на новый.
+					Без чеков и лишних вопросов.
+				</div>
+			</div>
+			<div class="block__item">
+				<div class="block__title">Про мобильное приложение</div>
+				<div class="block__text">
+					Мобильное приложение и весь контент(мультики и музыка без рекламы) бесплатно навсегда.
+					Доступно на Apple Store и Google Play
+				</div>
+			</div>
+			<div class="foto">
+				<div>
+					<img src="../multozvuk/img/01.jpg" alt="">
+				</div>
+				<div>
+					<img src="../multozvuk/img/02.jpg" alt="">
+				</div>
+				<div>
+					<img src="../multozvuk/img/03.jpg" alt="">
+				</div>
+				<div></div>
+			</div>
+
+			<!-- Подключаем jQuery -->
+			<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+			<!-- Подключаем файл JS скриптов -->
+			<script src="js/script.js"></script>
+		</div>
+		<form method="post">
+			<!-- Все наши поля заворачиваем в form-у -->
+			<!-- Каждому нашему полю присваиваем name соответстующего содержания, в коде php, мы будем его использовать. -->
+			<input type="text" name="myname" placeholder="Введите имя...">
+			<input type="text" name="myemeil" placeholder="Введите емейл...">
+			<input type="text" name="mytel" placeholder="Введите телефон...">
+			<input type="submit" name="knopka">
+		</form>
+		<!-- Ниже будем выводить результат отправки емейла. -->
+		<p id="result"></p>
 	</div>
 
-	<div class="page2"></div>
-	<div class="page3"></div>
-	<div class="page4"></div>
-	<div class="page5"></div>
-	<div class="page6"></div>
-	<div class="page7"></div>
+
+
 </body>
 
 </html>
